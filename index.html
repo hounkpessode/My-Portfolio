@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronicien/informaticien</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">HCBS</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">HCBS</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Photo de profil de Sergio HOUNKPESSODE" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Salut je suis</p>
+        <h1 class="title">Sergio HOUNKPESSODE</h1>
+        <p class="section__text__p2">Electronicien/informaticien </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+          Télécharger CV
+          </button>
+          <button class="btn btn-color-1"
+          onclick="location.href='#contact'">
+
+            Infos de Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Mon profil LinkedIn"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/codjo-bienvenu-sergeio-hounkpessode-a8a14a1b7/'"
+          />
+          <img
+            src="./assets/facebook.png"
+            alt="Mon profil Facebook"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/sergio.hounkpessode.9?mibextid=ZbWKwL'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Mon profil Github"
+            class="icon"
+            onclick="location.href='https://github.com/hounkpessode'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Apprenez-en davantage</p>
+      <h1 class="title">Sur moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Photo de profil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Icône d'expérience"
+                class="icon"
+              />
+              <h3>Expérience</h3>
+              <p>2+ ans <br />Electronique</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Icône d'éducation"
+                class="icon"
+              />
+              <h3>Éducation</h3>
+              <p>Baccalauréat F2 <br />Licence informatique industrielle</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              je suis électronicien informaticien passionné par
+              les technologies de l'information et de l'électronique. 
+              Actuellement en fin de formation de licence en informatique 
+              industrielle et maintenance, j'ai développé une solide expertise
+               dans ces domaines grâce à mes études et à mes projets personnels.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Icône de flèche"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorez mon</p>
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Informatique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>SCADA</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>PLC</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>IHM</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Electronique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Proteus</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Arduino</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Conception</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Raspberry Pi</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Icône de flèche"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Découvrez mes récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Projet 1"
+                class="project-img"
+              />
+                  </div>
+            <h2 class="experience-sub-title project-title">Gestion de 03 sources pour garantir une alimentation continue</h2>
+            <div class="btn-container">
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Projet 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/hounkpessode/hounkpessode'"
+               >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://hounkpessode.github.io/hounkpessode/'"
+              >
+                Démo en Direct
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Projet 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Boutique en ligne</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/hounkpessode/Bazin'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://hounkpessode.github.io/Bazin/'"
+              >
+                Démo en Direct
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Projet 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Contrôle et gestion de deux appareils domestiques</h2>
+            <div class="btn-container">
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Icône de flèche"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Restons en contact</p>
+      <h1 class="title">Contactez-moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/facebook.png"
+            alt="Icône facebook"
+            class="icon contact-icon email-icon"
+          />
+          <li><a href="https://www.facebook.com/sergio.hounkpessode.31">Profil Facebook</a></li>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Icône d'email"
+            class="icon contact-icon email-icon"
+          />
+          <li><a href="mailto:hounkpessodes@gmail.com">Envoyer un email</a></li>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Icône numéro"
+            class="icon contact-icon numéro"
+          />
+          <p>(+229) 69 64 02 54</p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Icône LinkedIn"
+            class="icon contact-icon"
+          />
+          <li><a href="hps:tt//www.linkedin.com/in/bienvenue-hounkpessode-a8a14a1b7">Profil LinkedIn</a></li>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2024 HCBS. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
